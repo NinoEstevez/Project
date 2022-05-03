@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.contenedor-index header ul li {
+  list-style: none; }
+  .contenedor-index header ul li a {
+    text-decoration: none;
+    font-family: "Anek Malayalam", sans-serif;
+    font-size: 30px;
+    color: #929292;
+    font-weight: bold;
+    transition: all 0.3s; }
+    .contenedor-index header ul li a:hover {
+      color: #181818; }
+  .contenedor-index header ul li #active {
+    color: #181818;
+    font-weight: bolder; }
+
+.contenedor-index .btn-box .btn-card a {
+  color: white;
+  text-decoration: none;
+  font-family: "Anek Malayalam", sans-serif;
+  font-size: 24px; }
+  .contenedor-index .btn-box .btn-card a:hover {
+    font-weight: bolder; }
+
+.contenedor-index .cuotas {
+  font-family: "Anek Malayalam", sans-serif;
+  color: white; }
+  .contenedor-index .cuotas h1 {
+    font-size: 25px; }
+  .contenedor-index .cuotas h2 {
+    font-family: "Mulish", cursive;
+    font-size: 35px; }
+
+.contenedor-index .contacto section h3 {
+  color: #181818;
+  font-family: "Anek Malayalam", sans-serif;
+  font-size: 28px; }
+
+.contenedor-index .pago section h3 {
+  color: #181818;
+  font-family: "Anek Malayalam", sans-serif;
+  font-size: 28px; }
+
+.contenedor-index footer {
+  font-family: "Anek Malayalam", sans-serif;
+  color: white;
+  font-weight: bolder; }
+
+.contenedor-tienda header ul li {
+  list-style: none; }
+  .contenedor-tienda header ul li a {
+    text-decoration: none;
+    font-family: "Anek Malayalam", sans-serif;
+    font-size: 30px;
+    color: #929292;
+    font-weight: bold;
+    transition: all 0.3s; }
+    .contenedor-tienda header ul li a:hover {
+      color: #181818; }
+  .contenedor-tienda header ul li #active {
+    color: #181818;
+    font-weight: bolder; }
+
+.contenedor-tienda .filtros {
+  font-family: "Anek Malayalam", sans-serif;
+  color: #181818; }
+  .contenedor-tienda .filtros h2 {
+    font-weight: bolder; }
+  .contenedor-tienda .filtros li {
+    list-style: none; }
+    .contenedor-tienda .filtros li a {
+      text-decoration: none;
+      color: #181818;
+      font-size: 20px;
+      font-weight: bolder; }
+
+.contenedor-tienda .productos-header {
+  font-family: "Mulish", cursive;
+  font-weight: bold;
+  color: #181818; }
+
+.contenedor-tienda .productos-carta h4 {
+  font-family: "Anek Malayalam", sans-serif;
+  font-weight: bold;
+  color: #181818; }
+
+.contenedor-tienda .productos-carta h5 {
+  font-family: "Mulish", cursive;
+  color: #929292; }
+
+.contenedor-tienda .productos-carta p {
+  font-family: "Mulish", cursive;
+  font-weight: bold; }
+
+.contenedor-tienda footer {
+  font-family: "Anek Malayalam", sans-serif;
+  color: white;
+  font-weight: bolder; }
+
+.contenedor-formu .formu {
+  font-family: "Mulish", cursive;
+  font-weight: bold; }
+
+.contenedor-index header {
+  background-color: white; }
+
+.contenedor-index .btn-box .btn-card a {
+  background-color: #181818;
+  border-radius: 2px;
+  transition: all 0.3s; }
+  .contenedor-index .btn-box .btn-card a:hover {
+    background-color: #929292;
+    opacity: 80%; }
+
+.contenedor-index .cuotas {
+  background-color: #181818; }
+
+.contenedor-index .contacto {
+  background-color: white; }
+
+.contenedor-index .pago {
+  background-color: white; }
+
+.contenedor-index footer {
+  background-color: #181818; }
+
+.contenedor-tienda header {
+  background-color: white; }
+
+.contenedor-tienda .buscador {
+  background-color: rgba(236, 236, 236, 0.815); }
+  .contenedor-tienda .buscador .btn-busqueda {
+    margin: auto auto;
+    width: 80%;
+    margin-top: 20px; }
+    .contenedor-tienda .buscador .btn-busqueda button {
+      border-radius: 4px 0px 0px 4px; }
+
+.contenedor-tienda .filtros {
+  background-color: rgba(236, 236, 236, 0.815); }
+
+.contenedor-tienda .productos-header {
+  background-color: rgba(236, 236, 236, 0.815); }
+
+.contenedor-tienda .contenedor-productos {
+  background-color: rgba(236, 236, 236, 0.815); }
+  .contenedor-tienda .contenedor-productos .productos-carta {
+    background-color: white; }
+
+.contenedor-tienda .pasa-pagina {
+  background-color: rgba(236, 236, 236, 0.815); }
+
+.contenedor-tienda footer {
+  background-color: #181818; }
+
+.contenedor-formu .formu {
+  border-radius: 4px; }
+
+.contenedor-index {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 18vh 82vh 40vh 80vh 10vh;
+  grid-template-areas: "hdr hdr" "btn btn" "cuotas cuotas" "contacto pago" "ftr ftr";
+  background-image: url(/images/fondo.png);
+  background-repeat: repeat-y;
+  background-size: 100%; }
+  .contenedor-index header {
+    grid-area: hdr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .contenedor-index header img {
+      margin-left: 20px;
+      height: 80%; }
+    .contenedor-index header ul {
+      margin-right: 20px;
+      display: flex;
+      width: 500px;
+      justify-content: space-around;
+      list-style: none; }
+  .contenedor-index .btn-box {
+    grid-area: btn;
+    width: 80%;
+    height: 100%;
+    margin: auto auto;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end; }
+    .contenedor-index .btn-box .btn-card {
+      margin-bottom: 70px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+      height: 150px; }
+      .contenedor-index .btn-box .btn-card a {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 20px; }
+  .contenedor-index .cuotas {
+    padding: 30px;
+    grid-area: cuotas;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 95%; }
+    .contenedor-index .cuotas h1 {
+      width: 80%;
+      margin-left: 120px; }
+    .contenedor-index .cuotas h2 {
+      width: auto;
+      margin: auto auto;
+      padding-bottom: 35px; }
+  .contenedor-index .contacto {
+    grid-area: contacto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 30px; }
+    .contenedor-index .contacto section {
+      width: 80%;
+      margin-left: 120px;
+      padding: 20px;
+      display: flex;
+      align-items: center; }
+      .contenedor-index .contacto section img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px; }
+  .contenedor-index .pago {
+    grid-area: pago;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 30px; }
+    .contenedor-index .pago section {
+      width: 80%;
+      padding: 20px;
+      display: flex;
+      align-items: center; }
+      .contenedor-index .pago section img {
+        margin-right: 20px; }
+  .contenedor-index footer {
+    grid-area: ftr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.contenedor-tienda {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: 18vh 12vh 16vh auto 10vh;
+  grid-template-areas: "hdr hdr" "busc busc" "filtros hp" "filtros productos" "filtros pp" "ftr ftr";
+  background-image: url(/images/fondo.png);
+  background-repeat: repeat-y;
+  background-size: 100%; }
+  .contenedor-tienda header {
+    grid-area: hdr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .contenedor-tienda header img {
+      margin-left: 20px;
+      height: 80%; }
+    .contenedor-tienda header ul {
+      margin-top: 17px;
+      margin-right: 20px;
+      display: flex;
+      width: 500px;
+      justify-content: space-around;
+      list-style: none; }
+  .contenedor-tienda .buscador {
+    grid-area: busc; }
+    .contenedor-tienda .buscador .btn-busqueda {
+      margin: auto auto;
+      width: 80%;
+      margin-top: 20px; }
+  .contenedor-tienda .filtros {
+    grid-area: filtros; }
+    .contenedor-tienda .filtros h2 {
+      margin-left: 135px;
+      margin-bottom: 25px; }
+    .contenedor-tienda .filtros ul {
+      margin-left: 135px; }
+      .contenedor-tienda .filtros ul li {
+        padding: 10px;
+        padding-left: 1px;
+        transition: all 0.3s; }
+        .contenedor-tienda .filtros ul li:hover {
+          padding-left: 15px; }
+  .contenedor-tienda .productos-header {
+    grid-area: hp; }
+    .contenedor-tienda .productos-header h1 {
+      margin-left: 5px; }
+  .contenedor-tienda .contenedor-productos {
+    grid-area: productos; }
+  .contenedor-tienda .pasa-pagina {
+    grid-area: pp; }
+    .contenedor-tienda .pasa-pagina .paginacion {
+      margin-left: 130px; }
+  .contenedor-tienda footer {
+    grid-area: ftr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px; }
+  .contenedor-tienda .contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 130px; }
+    .contenedor-tienda .contenedor-productos .productos-carta {
+      height: 340px;
+      width: 220px;
+      margin-right: 15px;
+      margin-bottom: 20px; }
+      .contenedor-tienda .contenedor-productos .productos-carta img {
+        width: 100%;
+        transition: all 0.3s; }
+        .contenedor-tienda .contenedor-productos .productos-carta img:hover {
+          opacity: 80%; }
+      .contenedor-tienda .contenedor-productos .productos-carta h4 {
+        padding-top: 8px;
+        padding-left: 16px; }
+      .contenedor-tienda .contenedor-productos .productos-carta h5 {
+        padding-left: 16px; }
+      .contenedor-tienda .contenedor-productos .productos-carta p {
+        padding-left: 16px; }
+
+.contenedor-formu {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 18vh 72vh 10vh;
+  grid-template-areas: "hdr" "form" "ftr";
+  background-image: url(/images/fondo.png);
+  background-size: 100%;
+  background-repeat: repeat-y; }
+  .contenedor-formu header {
+    grid-area: hdr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center; }
+    .contenedor-formu header img {
+      margin-left: 20px;
+      height: 80%; }
+    .contenedor-formu header ul {
+      margin-top: 17px;
+      margin-right: 20px;
+      display: flex;
+      width: 500px;
+      justify-content: space-around;
+      list-style: none; }
+      .contenedor-formu header ul li {
+        list-style: none; }
+        .contenedor-formu header ul li a {
+          text-decoration: none;
+          font-family: "Anek Malayalam", sans-serif;
+          font-size: 30px;
+          color: #929292;
+          font-weight: bold;
+          transition: all 0.3s; }
+          .contenedor-formu header ul li a:hover {
+            color: #181818; }
+        .contenedor-formu header ul li #active {
+          color: #181818;
+          font-weight: bolder; }
+  .contenedor-formu .formu {
+    grid-area: form;
+    background-color: rgba(236, 236, 236, 0.815);
+    width: 70%;
+    margin: auto auto;
+    padding: 40px; }
+    .contenedor-formu .formu h2 {
+      margin-bottom: 25px; }
+  .contenedor-formu footer {
+    grid-area: ftr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    font-family: "Anek Malayalam", sans-serif;
+    color: white;
+    font-weight: bolder;
+    background-color: #181818; }
+
+.contenedor-nosotras {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 18vh 72vh 10vh;
+  grid-template-areas: "hdr hdr" "foto texto" "ftr ftr";
+  background-image: url(/images/fondo.png);
+  background-size: 100%;
+  background-repeat: repeat-y; }
+  .contenedor-nosotras footer {
+    grid-area: ftr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    font-family: "Anek Malayalam", sans-serif;
+    color: white;
+    font-weight: bolder;
+    background-color: #181818; }
+  .contenedor-nosotras header {
+    grid-area: hdr;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center; }
+    .contenedor-nosotras header img {
+      margin-left: 20px;
+      height: 80%; }
+    .contenedor-nosotras header ul {
+      margin-top: 17px;
+      margin-right: 20px;
+      display: flex;
+      width: 500px;
+      justify-content: space-around;
+      list-style: none; }
+      .contenedor-nosotras header ul li {
+        list-style: none; }
+        .contenedor-nosotras header ul li a {
+          text-decoration: none;
+          font-family: "Anek Malayalam", sans-serif;
+          font-size: 30px;
+          color: #929292;
+          font-weight: bold;
+          transition: all 0.3s; }
+          .contenedor-nosotras header ul li a:hover {
+            color: #181818; }
+        .contenedor-nosotras header ul li #active {
+          color: #181818;
+          font-weight: bolder; }
+  .contenedor-nosotras .columna-1 {
+    grid-area: foto;
+    background-color: rgba(236, 236, 236, 0.815);
+    padding-top: 50px;
+    padding-left: 160px; }
+    .contenedor-nosotras .columna-1 img {
+      width: 97%;
+      box-shadow: 3px 3px 6px; }
+  .contenedor-nosotras .columna-2 {
+    grid-area: texto;
+    padding-right: 130px;
+    background-color: #ececec;
+    padding-top: 50px;
+    padding-left: 15px; }
+    .contenedor-nosotras .columna-2 h1 {
+      font-family: "Mulish", cursive;
+      font-weight: bold; }
+    .contenedor-nosotras .columna-2 p {
+      font-family: "Anek Malayalam", sans-serif;
+      font-weight: bold;
+      font-size: 21px; }

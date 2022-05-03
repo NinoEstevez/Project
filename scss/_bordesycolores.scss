@@ -1,0 +1,141 @@
+$colorPrimario: rgb(24, 24, 24);
+$colorSecundario: rgb(146, 146, 146);
+
+$fondoClaro: rgb(236, 236, 236);
+$fondoClaroT: rgba(236, 236, 236, 0.815);
+$fondoOscuro: rgb(24, 24, 24);
+
+.contenedor-index {
+
+    header {
+
+
+        background-color: white;
+        
+
+
+    }
+
+
+    .btn-box {
+
+        .btn-card {
+
+            a {
+                 
+                background-color: $fondoOscuro;
+                border-radius: 2px;
+                transition: all 0.3s;
+
+                &:hover {
+
+                    background-color: $colorSecundario;
+                    opacity: 80%;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .cuotas {
+
+        background-color: $fondoOscuro;
+
+    }
+
+    .contacto {
+
+        background-color: white;
+        
+
+    }
+
+    .pago {
+
+        background-color: white;
+
+    }
+
+
+    footer {
+        background-color: $fondoOscuro;
+
+    }
+
+
+
+}
+
+.contenedor-tienda {
+
+    header {
+
+        background-color: white;
+
+    }
+
+    .buscador {
+
+        background-color: $fondoClaroT;
+
+        .btn-busqueda {
+
+            margin: auto auto;
+            width: 80%;
+            margin-top: 20px;
+            
+            button {
+
+                border-radius: 4px 0px 0px 4px;
+
+            }
+
+        }
+
+    }
+
+    .filtros {
+
+        background-color: $fondoClaroT;
+    }
+
+    .productos-header {
+
+        background-color: $fondoClaroT;
+    }
+
+    .contenedor-productos {
+
+        background-color:  $fondoClaroT;
+
+        .productos-carta {
+            background-color: white;
+        }
+
+    }
+
+    .pasa-pagina {
+        
+        background-color: $fondoClaroT;
+    }
+
+    footer {
+        background-color: $fondoOscuro;
+    }
+
+
+}
+
+.contenedor-formu {
+
+    .formu {
+
+        border-radius: 4px;
+
+    }
+
+}

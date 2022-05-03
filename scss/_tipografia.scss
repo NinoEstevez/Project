@@ -1,0 +1,260 @@
+$lobster: 'Lobster Two', cursive;
+$anek: 'Anek Malayalam', sans-serif;
+$mulish: 'Mulish', cursive;
+
+$colorPrimario: rgb(24, 24, 24);
+$colorSecundario: rgb(146, 146, 146);
+
+
+.contenedor-index {
+
+    header {
+
+        ul {
+
+            li {
+
+                list-style: none;
+
+                a {
+
+                    text-decoration: none;
+                    font-family: $anek;
+                    font-size: 30px;
+                    color: $colorSecundario;
+                    font-weight: bold;
+                    transition: all 0.3s;
+
+                    &:hover {
+
+                    color: $colorPrimario;
+
+                    }
+
+                }
+
+                #active {
+
+                    color: $colorPrimario;
+                    font-weight: bolder;
+                    
+                }
+
+            }
+
+        }
+
+
+    }
+
+
+    .btn-box {
+
+        .btn-card {
+
+            a {
+
+                color: white;
+                text-decoration: none;
+                font-family: $anek;
+                font-size: 24px;
+
+                &:hover {
+
+                    font-weight: bolder;
+
+                }
+
+            }
+        }
+
+
+    }
+
+    .cuotas {
+
+        font-family: $anek;
+        color: white;
+
+        h1 {
+
+            font-size: 25px;
+
+        }
+
+        h2 {
+
+            font-family: $mulish;
+            font-size: 35px;
+        }
+
+    }
+
+    .contacto {
+        
+        section {
+
+            h3 {
+
+                color: $colorPrimario;
+                font-family: $anek;
+                font-size: 28px;
+
+            }
+
+        }
+
+    }
+
+    .pago {
+        section {
+
+            h3 {
+
+                color: $colorPrimario;
+                font-family: $anek;
+                font-size: 28px;
+
+            }
+
+        }
+    }
+
+    footer {
+        font-family: $anek;
+        color: white;
+        font-weight: bolder;
+    }
+
+}
+
+.contenedor-tienda {
+
+    header {
+
+        ul {
+
+            li {
+
+                list-style: none;
+
+                a {
+
+                    text-decoration: none;
+                    font-family: $anek;
+                    font-size: 30px;
+                    color: $colorSecundario;
+                    font-weight: bold;
+                    transition: all 0.3s;
+
+                    &:hover {
+
+                    color: $colorPrimario;
+
+                    }
+
+                }
+
+                #active {
+
+                    color: $colorPrimario;
+                    font-weight: bolder;
+                    
+                }
+
+            }
+
+        }
+
+
+    }
+
+    .buscador {
+
+
+    }
+
+    .filtros {
+
+        font-family: $anek;
+        color: $colorPrimario;
+
+        h2 {
+
+            font-weight: bolder;
+
+        }
+
+        li {
+
+            list-style: none;
+
+
+            a {
+
+                text-decoration: none;
+                color: $colorPrimario;
+                font-size: 20px;
+                font-weight: bolder;
+
+            }
+
+        }
+
+    }
+
+    .productos-header {
+
+        font-family: $mulish;
+        font-weight: bold;
+        color: $colorPrimario;
+
+    }
+
+    .productos-carta {
+
+
+        img {
+
+        }
+
+        h4 {
+
+            font-family: $anek;
+            font-weight: bold;
+            color: $colorPrimario;
+        }
+
+        h5 {
+            
+            font-family: $mulish;
+            color: $colorSecundario;
+
+        }
+
+        p {
+            font-family: $mulish;
+            font-weight: bold;
+        }
+
+
+    }
+
+    footer {
+        font-family: $anek;
+        color: white;
+        font-weight: bolder;
+    }
+
+}
+
+.contenedor-formu {
+
+    .formu {
+
+        font-family: $mulish;
+        font-weight: bold;
+
+    }
+
+}
