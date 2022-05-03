@@ -1,0 +1,603 @@
+
+.contenedor-index {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 18vh 82vh 40vh 80vh 10vh;
+    grid-template-areas: 
+    
+    "hdr hdr"
+    "btn btn"
+    "cuotas cuotas"
+    "contacto pago"
+    "ftr ftr";
+
+    background-image: url(/images/fondo.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+
+    header {
+
+        grid-area: hdr;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        
+        img{
+
+            margin-left: 20px;
+            height: 80%;
+
+        }
+
+        ul {
+
+
+            margin-right: 20px;
+            display: flex;
+            width: 500px;
+            justify-content: space-around;
+            list-style: none;
+
+        }
+
+
+    }
+
+
+    .btn-box {
+
+        grid-area: btn;
+        width: 80%;
+        height: 100%;
+        margin: auto auto;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+
+        .btn-card {
+
+            margin-bottom: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            height: 150px;
+
+
+            a {
+
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 20px;
+            
+
+            }
+
+        }
+
+
+    }
+
+    .cuotas {
+
+        padding: 30px;
+        grid-area: cuotas;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 95%;
+
+
+        h1 {
+
+            width: 80%;
+            margin-left: 120px;
+
+
+        }
+
+        h2 {
+
+            width: auto;
+            margin: auto auto;
+            padding-bottom: 35px;
+        }
+
+    }
+
+    .contacto {
+
+        grid-area: contacto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+        section {
+
+            width: 80%;
+            margin-left: 120px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+
+            img    {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            }
+        }
+    }
+
+    .pago {
+
+        grid-area: pago;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+        section {
+
+            width: 80%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+
+            img   {
+               margin-right: 20px;
+            }
+        }
+    }
+
+
+    footer {
+        grid-area: ftr;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
+.contenedor-tienda {
+
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: 18vh 12vh 16vh auto 10vh;
+    grid-template-areas: 
+    
+    "hdr hdr"
+    "busc busc"
+    "filtros hp"
+    "filtros productos"
+    "filtros pp"
+    "ftr ftr";
+
+    background-image: url(/images/fondo.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+
+
+    header {
+
+        grid-area: hdr;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        
+        img{
+
+            margin-left: 20px;
+            height: 80%;
+
+        }
+
+        ul {
+
+            margin-top: 17px;
+            margin-right: 20px;
+            display: flex;
+            width: 500px;
+            justify-content: space-around;
+            list-style: none;
+
+        }
+
+
+    }
+
+    .buscador {
+
+        grid-area: busc;
+
+        .btn-busqueda {
+
+            margin: auto auto;
+            width: 80%;
+            margin-top: 20px;
+            
+            button {
+
+            }
+
+        }
+
+    }
+
+    .filtros {
+
+        grid-area: filtros;
+
+        h2 {
+            margin-left: 135px;
+            margin-bottom: 25px;
+        }
+
+        ul {
+
+            margin-left: 135px;
+
+            li {
+
+                padding: 10px;
+                padding-left: 1px;
+                transition: all 0.3s;
+
+                &:hover {
+
+                    padding-left: 15px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .productos-header {
+
+        grid-area: hp;
+
+        h1 {
+
+            margin-left: 5px;
+
+        }
+
+        .btn-ordenar {
+
+            
+
+        }
+
+    }
+
+    .contenedor-productos {
+
+        grid-area: productos;
+    }
+
+    .pasa-pagina {
+        
+        grid-area: pp;
+        
+        .paginacion {
+
+            margin-left: 130px;
+
+        }
+
+    }
+
+    footer {
+        grid-area: ftr;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .contenedor-productos {
+
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 130px;
+
+        .productos-carta {
+
+            height: 340px;
+            width: 220px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+                transition: all 0.3s;
+                &:hover {
+
+                    opacity: 80%;
+
+                }
+
+            }
+
+            h4 {
+                padding-top: 8px;
+                padding-left: 16px;
+            }
+
+            h5 {
+                padding-left: 16px;
+            }
+
+            p {
+                padding-left: 16px;
+            }
+
+
+        }
+
+    }
+
+
+}
+
+.contenedor-formu {
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 18vh 72vh 10vh;
+    grid-template-areas: 
+    "hdr"
+    "form"
+    "ftr";
+
+    background-image: url(/images/fondo.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+
+    header {
+
+        grid-area: hdr;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        align-items: center;
+        
+        img{
+
+            margin-left: 20px;
+            height: 80%;
+
+        }
+
+        ul {
+
+            margin-top: 17px;
+            margin-right: 20px;
+            display: flex;
+            width: 500px;
+            justify-content: space-around;
+            list-style: none;
+
+            
+            li {
+
+                list-style: none;
+
+                a {
+
+                    text-decoration: none;
+                    font-family: $anek;
+                    font-size: 30px;
+                    color: $colorSecundario;
+                    font-weight: bold;
+                    transition: all 0.3s;
+
+                    &:hover {
+
+                    color: $colorPrimario;
+
+                    }
+
+                }
+
+                #active {
+
+                    color: $colorPrimario;
+                    font-weight: bolder;
+                    
+                }
+
+            }
+
+        }
+
+
+    }
+
+    .formu {
+
+        grid-area: form;
+        background-color: $fondoClaroT;
+        width: 70%;
+        margin: auto auto;
+        padding: 40px;
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+    }
+
+
+    footer {
+        grid-area: ftr;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        font-family: $anek;
+        color: white;
+        font-weight: bolder;
+        background-color: $fondoOscuro;
+    }
+
+
+
+}
+
+.contenedor-nosotras {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 18vh 72vh 10vh;
+    grid-template-areas: 
+    "hdr hdr"
+    "foto texto"
+    "ftr ftr";
+
+    background-image: url(/images/fondo.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+
+
+
+    footer {
+        grid-area: ftr;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        font-family: $anek;
+        color: white;
+        font-weight: bolder;
+        background-color: $fondoOscuro;
+    }
+
+    header {
+
+        grid-area: hdr;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        align-items: center;
+        
+        img{
+
+            margin-left: 20px;
+            height: 80%;
+
+        }
+
+        ul {
+
+            margin-top: 17px;
+            margin-right: 20px;
+            display: flex;
+            width: 500px;
+            justify-content: space-around;
+            list-style: none;
+
+            
+            li {
+
+                list-style: none;
+
+                a {
+
+                    text-decoration: none;
+                    font-family: $anek;
+                    font-size: 30px;
+                    color: $colorSecundario;
+                    font-weight: bold;
+                    transition: all 0.3s;
+
+                    &:hover {
+
+                    color: $colorPrimario;
+
+                    }
+
+                }
+
+                #active {
+
+                    color: $colorPrimario;
+                    font-weight: bolder;
+                    
+                }
+
+            }
+
+        }
+
+
+    }
+
+    .columna-1 {
+
+        grid-area: foto;
+        background-color: $fondoClaroT;
+        padding-top: 50px;
+        padding-left: 160px;
+
+
+        img {
+
+            
+            width: 97%;
+            box-shadow: 3px 3px 6px;
+        }
+    }
+
+    .columna-2 {
+
+        grid-area: texto;
+        padding-right: 130px;
+        background-color: $fondoClaro;
+        padding-top: 50px;
+        padding-left: 15px;
+
+        h1 {
+
+            font-family: $mulish;
+            font-weight: bold;
+
+        }
+
+        p {
+            font-family: $anek;
+            font-weight: bold;
+            font-size: 21px;
+        }
+    }
+
+}
