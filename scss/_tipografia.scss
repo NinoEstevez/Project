@@ -258,3 +258,53 @@ $colorSecundario: rgb(146, 146, 146);
     }
 
 }
+
+.contenedor-xmayor {
+
+    header {
+
+        ul {
+
+            li {
+
+                list-style: none;
+
+                a {
+
+                    text-decoration: none;
+                    font-family: $anek;
+                    font-size: 30px;
+                    color: $colorSecundario;
+                    font-weight: bold;
+                    transition: all 0.3s;
+
+                    &:hover {
+
+                    color: $colorPrimario;
+
+                    }
+
+                }
+
+                #active {
+
+                    color: $colorPrimario;
+                    font-weight: bolder;
+                    
+                }
+
+            }
+
+        }
+
+
+    }
+
+    footer {
+        font-family: $anek;
+        color: white;
+        font-weight: bolder;
+    }
+
+
+}
